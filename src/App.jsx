@@ -1,11 +1,17 @@
-
-import PlantDetail from "./PlantDetail";
+import Header from "./components/Header";
+import Banner from "./components/Banner";
+import ProductList from "./components/ProductList";
+import Footer from "./components/Footer";
+import ProductCard from "./components/ProductCard";
 
 function App() {
   return (
     <>
-     
-      <PlantDetail />
+      <Header />
+      <Banner />
+      <ProductCard />
+      <ProductList />
+      <Footer />
     </>
   );
 }
