@@ -1,18 +1,16 @@
+import { Row, Col } from "react-bootstrap";
+import ProductCard from "./ProductCard";
 import products from "../data/products";
-import ProductCard from "./ProductCard";   // ← BẮT BUỘC
-import { Row, Col, Container } from "react-bootstrap";
 
 function ProductList() {
   return (
-    <Container className="my-4">
-      <Row>
-        {products.map((p) => (
-          <Col md={4} key={p.id} className="mb-4">
-            <ProductCard product={p} />
-          </Col>
-        ))}
-      </Row>
-    </Container>
+    <Row className="g-4">
+      {products.map(p => (
+        <Col md={4} key={p.id}>
+          <ProductCard product={p} />
+        </Col>
+      ))}
+    </Row>
   );
 }
 

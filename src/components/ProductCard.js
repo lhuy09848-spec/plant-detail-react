@@ -1,7 +1,7 @@
 import { Card, Button, Badge } from "react-bootstrap";
 
 function ProductCard({ product }) {
-  const isAvailable = product.status === "In Stock";
+  const isAvailable = product.status === "In stock";;
 
   return (
     <Card className="h-100 shadow-sm">
