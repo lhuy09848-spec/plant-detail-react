@@ -1,17 +1,11 @@
-import Header from "./components/Header";
-import Banner from "./components/Banner";
-// import ProductList from "./components/ProductList";
-import Footer from "./components/Footer";
-
+import StudentManagement from "./components/StudentManagement";
+import { ThemeProvider } from "./context/ThemeContext";
 
 function App() {
   return (
-    <>
-      <Header />
-      <Banner />
-      {/* <ProductList products={products} />  ← truyền data vào */}
-      <Footer />
-    </>
+    <ThemeProvider>
+      <StudentManagement />
+    </ThemeProvider>
   );
 }
 
